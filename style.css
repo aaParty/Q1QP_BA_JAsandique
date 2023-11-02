@@ -1,0 +1,1457 @@
+/* The Font */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&family=Open+Sans');
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Standard Settings */
+
+h1
+{
+    font-family: 'Roboto Slab', sans-serif;
+    color: #120424;
+}
+
+h2
+{
+    font-family: 'Roboto Slab', sans-serif;
+    color: #130525; 
+}
+
+h3
+{
+    margin-left: 20px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #140528;
+}
+
+h4
+{
+    font-family: 'Roboto Slab', sans-serif;
+    color: #130b23;
+}
+
+p
+{
+    font-family: 'Roboto Slab', sans-serif;
+    color: #0d0815;
+}
+
+.list
+{
+    margin-left: 20px;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #0d0815;
+}
+
+
+.group
+{
+    display: flex;
+    align-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.group1
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.group2
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.group3
+{
+    display: flex;
+    align-items: center;
+}
+
+.group4
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.group5
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+/* ends */
+/* The Main Stuff */
+
+.banner
+{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images/city.jpg);
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+    /* this was for the side bar icon i made*/
+
+    #line
+    {
+        margin: 10px;
+        padding: 1px;
+        background-color: #000000;
+        border-radius: 5px;
+        width: 30px;
+        height: 2px;
+        position: relative;
+    }
+
+#line2
+{
+    margin: 0px;
+    padding: 1px;
+    background-color: #220c35;
+    width: 360px;
+    height: 1px;
+    position: relative;
+    margin-left: -82.5px;
+}
+
+ul
+{
+    list-style: none;
+    background: linear-gradient(to left, rgb(82, 23, 133), rgb(93, 24, 154), rgb(91, 36, 139), rgb(89, 30, 141), rgb(80, 20, 133), rgb(68, 26, 107));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li img
+{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-left: -70px;
+}
+
+ul li
+{
+    display: inline-block;
+    position: relative;
+}
+
+ul li img
+{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li a
+{
+    display: inline-block;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 0px;
+    color: #25143d;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;  
+}
+
+    /* the animations i made when hovering and clicking */
+
+    ul li ul li a:hover
+    {
+        opacity: 80%;
+        transform: scale(1.05);
+        transition: ease-in-out;
+        transition-duration: 0.5s;
+    }
+
+    ul li ul li a:active
+    {
+        opacity: 0%;
+        transform: scale(0.01);
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+    }
+
+ul li p
+{
+    display: inline-block;
+    color: #25143d;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;  
+}
+
+li a img
+{
+    height: 40px;
+    width: 40px;
+    border: 2px black solid;
+    border-radius: 100%;
+    justify-content: space-evenly;
+}
+
+ul li ul.dropdown li
+{
+    margin: 5px;
+    padding: 5px;
+    display: block;
+    color: rgb(82, 23, 133);
+    margin-left: 15px;
+}
+
+ul li ul.dropdown
+{
+    width: 300px;
+    background: linear-gradient(to left, rgb(80, 20, 133), rgb(68, 26, 107));
+    z-index: 999;
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    border-bottom-right-radius: 10px;
+}
+
+ul li:hover ul.dropdown
+{
+    display: block;
+}
+
+#logo img
+{
+    height: 25px;
+    width: 30px;
+    margin: 20px;
+    border: 2px #653aa1 solid;
+    border-radius: 100%;
+}
+
+#home
+{
+    margin: 5px;
+    padding: 0px 10px;
+    border: 2px #431e79 solid;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+#home a
+{
+    color: #25143d;
+    text-align: center;
+}
+
+    /* more animations */
+
+    #home:hover
+    {
+        background-color: #48247a;
+        transition: ease-in-out;
+        transition-duration: 0.5s;
+    }
+
+    #home a:hover
+    {
+        opacity: 80%;
+        transform: scale(1.05);
+        transition: ease-in-out;
+        transition-duration: 0.5s;
+    }
+
+    #home a:active
+    {
+        opacity: 0%;
+        transform: scale(0.01);
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+    }
+
+.footer
+{
+    margin: 0px;
+    padding: 15px;
+    background-image: linear-gradient(to right, rgb(105, 26, 174), rgb(93, 24, 154), rgb(80, 19, 134), rgb(59, 15, 97), rgb(60, 16, 99), rgb(43, 11, 72));
+    position: fixed;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copyright
+{
+    margin: 10px;
+    padding: 0px;
+    color: rgb(17, 4, 30);
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-small;
+    font-weight: bold;
+    text-align: center;
+}
+
+#socials
+{
+    margin: 5px;
+    padding: 0px;
+    display: inline;
+}
+
+#socials img
+{
+    
+    height: 25px;
+    width: 25px;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+/* ends */
+/* Home Menu */
+
+    /* this was to group the objects to make them aligned */
+
+    .tp
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+/* hanging - the black line coming from the ceiling */
+/* circle - the object surrounding the icon */
+/* circle img - the icon */
+/* animations - made them bigger if you hover, and smaller if you click */
+
+#hanging
+{
+    background-color: black;
+    height: 400px;
+    width: 2px;
+    margin-left: 27px;
+}
+
+#circle
+{
+    height: 50px;
+    width: 50px;
+    background-color: #270e4d;
+    border: 3px black solid;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle img
+{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+#circle img:hover
+{
+    opacity: 30%;
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#circle img:active
+{
+    opacity: 0%;
+    transform: scale(0.01);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+#hanging2
+{
+    background-color: black;
+    height: 75px;
+    width: 2px;
+    margin-left: 27px;
+}
+
+#circle2
+{
+    height: 50px;
+    width: 50px;
+    background-color: #270e4d;
+    border: 3px black solid;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle2 img
+{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+#circle2 img:hover
+{
+    opacity: 30%;
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#circle2 img:active
+{
+    opacity: 0%;
+    transform: scale(0.01);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+#circle2 img:hover #circle2
+{
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#hanging3
+{
+    background-color: black;
+    height: 300px;
+    width: 2px;
+    margin-left: 27px;
+}
+
+#circle3
+{
+    height: 50px;
+    width: 50px;
+    background-color: #270e4d;
+    border: 3px black solid;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle3 img
+{
+    height: 35px;
+    width: 35px;
+    margin: 5px;
+}
+
+#circle3 img:hover
+{
+    opacity: 30%;
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#circle3 img:active
+{
+    opacity: 0%;
+    transform: scale(0.01);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+#hanging4
+{
+    background-color: black;
+    height: 225px;
+    width: 2px;
+    margin-left: 27px;
+}
+
+#circle4
+{
+    height: 50px;
+    width: 50px;
+    background-color: #270e4d;
+    border: 3px black solid;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle4 img
+{
+    height: 35px;
+    width: 35px;
+}
+
+#circle4 img:hover
+{
+    opacity: 30%;
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#circle4 img:active
+{
+    opacity: 0%;
+    transform: scale(0.01);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+#hanging5
+{
+    background-color: black;
+    height: 500px;
+    width: 2px;
+    margin-left: 27px;
+}
+
+#circle5
+{
+    height: 50px;
+    width: 50px;
+    background-color: #270e4d;
+    border: 3px black solid;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#circle5 img
+{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+#circle5 img:hover
+{
+    opacity: 30%;
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#circle5 img:active
+{
+    opacity: 0%;
+    transform: scale(0.01);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+#hanging6
+{
+    background-color: black;
+    height: 115px;
+    width: 2px;
+    margin-left: 27px;
+}
+
+#circle6
+{
+    height: 50px;
+    width: 50px;
+    background-color: #270e4d;
+    border: 3px black solid;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#circle6 img
+{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+#circle6 img:hover
+{
+    opacity: 30%;
+    transform: scale(1.1);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+#circle6 img:active
+{
+    opacity: 0%;
+    transform: scale(0.01);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+/* end */
+/* Researchers */
+/* photocard - the main object */
+/* photocard img - the picture of the person */
+
+.photocard1
+{
+    margin: 10px;
+    padding: 5px;
+    height: 400px;
+    width: 300px;
+    background-color: #653aa1;
+    border: 2px black solid;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #25143d;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.photocard1 img
+{
+    height: 295px;
+    width: 295px;
+    border: 3px #25133d solid;
+    border-radius: 10px;
+}
+
+.photocard2
+{
+    margin: 10px;
+    padding: 5px;
+    height: 400px;
+    width: 300px;
+    background-color: #653aa1;
+    border: 2px black solid;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: #25143d;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.photocard2 img
+{
+    height: 295px;
+    width: 295px;
+    border: 3px #25133d solid;
+    border-radius: 10px;
+}
+
+.photocard3
+{
+    margin: 10px;
+    padding: 5px;
+    height: 400px;
+    width: 300px;
+    background-color: #653aa1;
+    border: 2px black solid;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: #25143d;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.photocard3 img
+{
+    height: 295px;
+    width: 295px;
+    border: 3px #25133d solid;
+    border-radius: 10px;
+}
+
+/* information - hidden behind the photocard, will pop up when hovered over a certain photocard */
+
+.information1
+{
+    margin: 0px;
+    padding: 0px;
+    height: 400px;
+    width: 300px;
+    background-color: #653aa1;
+    font-size: 25px;
+    color: #25143d;
+    position: absolute;
+    opacity: 0%;
+    text-align: start;
+}
+
+.information1 h2
+{
+    margin: 5px;
+    margin-left: -125px;
+    padding: 5px;
+    font-size: 25px;
+    color: #25143d;
+    opacity: 0%;
+}
+
+.information1 p
+{
+    margin: 5px;
+    margin-left: -100px;
+    padding: 5px;
+    font-size: 15px;
+    color: #25143d;
+    opacity: 0%;
+}
+
+/* the way this works is that when you hover over a photocard, its information will appear */
+
+.photocard1:hover > .information1
+{
+    opacity: 100%;
+    transform: translateX(600px) scaleX(2.75) scaleY(1.05);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    border-top: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+.photocard1:hover > .information1 h2
+{
+    opacity: 100%;
+    transform: scaleX(0.36) scaleY(0.95);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.photocard1:hover > .information1 p
+{
+    opacity: 100%;
+    transform: scaleX(0.36) scaleY(0.95);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.information2
+{
+    margin: 0px;
+    padding: 0px;
+    height: 400px;
+    width: 300px;
+    background-color: #653aa1;
+    font-size: 25px;
+    color: #25143d;
+    position: absolute;
+    opacity: 0%;
+    text-align: start;
+}
+
+.information2 h2
+{
+    margin: 5px;
+    margin-left: -125px;
+    padding: 5px;
+    font-size: 25px;
+    color: #25143d;
+    opacity: 0%;
+}
+
+.information2 p
+{
+    margin: 5px;
+    margin-left: -100px;
+    padding: 5px;
+    font-size: 15px;
+    color: #25143d;
+    opacity: 0%;
+}
+
+.photocard2:hover
+{
+    transform: translateX(-405px);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.photocard2:hover > .information2
+{
+    opacity: 100%;
+    transform: translateX(600px) scaleX(2.75) scaleY(1.05);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    border-top: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+.photocard2:hover > .information2 h2
+{
+    opacity: 100%;
+    transform: scaleX(0.36) scaleY(0.95);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.photocard2:hover > .information2 p
+{
+    opacity: 100%;
+    transform: scaleX(0.36) scaleY(0.95);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.information3
+{
+    margin: 0px;
+    padding: 0px;
+    height: 400px;
+    width: 300px;
+    background-color: #653aa1;
+    font-size: 25px;
+    color: #25143d;
+    position: absolute;
+    opacity: 0%;
+    text-align: start;
+}
+
+.information3 h2
+{
+    margin: 5px;
+    margin-left: -125px;
+    padding: 5px;
+    font-size: 25px;
+    color: #25143d;
+    opacity: 0%;
+}
+
+.information3 p
+{
+    margin: 5px;
+    margin-left: -100px;
+    padding: 5px;
+    font-size: 15px;
+    color: #25143d;
+    opacity: 0%;
+}
+
+.photocard3:hover
+{
+    transform: translateX(-808px);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.photocard3:hover > .information3
+{
+    opacity: 100%;
+    transform: translateX(600px) scaleX(2.75) scaleY(1.05);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    border-radius: 5px;
+    border-top: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+.photocard3:hover > .information3 h2
+{
+    opacity: 100%;
+    transform: scaleX(0.36) scaleY(0.95);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.photocard3:hover > .information3 p
+{
+    opacity: 100%;
+    transform: scaleX(0.36) scaleY(0.95);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+/* ends */
+/* Background & Conclusion */
+
+    /* this is the main object */
+
+    .writing
+    {
+        margin: 30px;
+        margin-top: 95px;
+        margin-left: 175px;
+        margin-right: 175px;
+        padding: 10px;
+        border: 2px solid black;
+        display: block;
+        border-radius: 10px;
+        background-color: rgb(81, 15, 122);   
+        position: absolute;
+        height: 500px;
+        width: 900px;
+    }
+
+    /* this covers the main object */
+
+    .open
+    {
+        margin: -11px 0px 0px -11px;
+        padding: 0px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgb(81, 15, 122);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /* these are the decor on the object that covers the main object */
+
+    .decor1
+    {
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+    }
+
+    .decor2
+    {
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        height: 1054px;
+        width: 3px;
+        transform: rotate(-60.75deg);
+    }
+
+    .decor3
+    {
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        height: 1054px;
+        width: 3px;
+        transform: rotate(60.75deg);
+    }
+
+/* animation - scales down into existence once hovered */
+
+.writing:hover > .open
+{
+    opacity: 0%;
+    transform: scale(0);
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+    /* groups some text */
+
+    .background
+    {
+        display: flex;
+        align-items: flex-start;
+        margin-left: 20px;
+        font-size: large;
+    }
+
+/* ends */
+/* Main Content */
+
+    /* this is the object you see in the screen */
+
+    .choose
+    {
+        height: 80.75%;
+        width: 98.93%;
+        margin: 0px;
+        padding: 5px;
+        background-image: linear-gradient(to right, rgb(39, 14, 77), rgb(55, 29, 95), rgb(39, 14, 77));
+        color: rgb(24, 1, 37);
+        border: 2px #000000 solid;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        justify-content: space-evenly;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .chooseborder
+    {
+        height: 100%;
+        width: 0px;
+        margin: 0px;
+        padding: 5px;
+        background-color: #000000;
+    }
+
+    /* this is the invisible object that you hover on */
+
+    .optiona
+    {
+        margin: 0px;
+        padding: 5px;
+        height: 80.75%;
+        width: 44%;
+        background-color: #270e4d;
+        border: 2px #000000 solid;
+        position: relative;
+        float: left;
+        opacity: 0%;
+        z-index: 2;
+    }
+
+    /* the group of items that scale up into the screen */
+
+    .option1
+    {
+        opacity: 0%;
+        transform: scale(0.01);
+        position: absolute;
+    }
+
+/* animation - basically what happens here is that, when you hover over the invisible hover detector,
+it would cause the object/text you see disappear and make the information about it appear */
+
+.optiona:hover ~ .choose
+{
+    opacity: 0%;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    transition-delay: 0.75s;
+}
+
+.optiona:hover ~ .option1
+{
+    opacity: 100%;
+    transform: scale(1);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    transition-delay: 0.75s;
+    position: absolute;
+}
+
+/* second option */
+
+.optionb
+{
+    margin: 0px;
+    padding: 5px;
+    height: 80.75%;
+    width: 44%;
+    background-color: #270e4d;
+    border: 2px #000000 solid;
+    position: relative;
+    float: right;
+    opacity: 0%;
+    z-index: 2;
+}
+
+.option2
+{
+    opacity: 0%;
+    transform: scale(0.01);
+    position: absolute;
+}
+
+.optionb:hover ~ .choose
+{
+    opacity: 0%;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    transition-delay: 0.75s;
+}
+
+.optionb:hover ~ .option2
+{
+    opacity: 100%;
+    transform: scale(1);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    transition-delay: 0.75s;
+    position: absolute;
+}
+
+/* the object that you see */
+
+    .choose
+    {
+        height: 80.75%;
+        width: 98.93%;
+        margin: 0px;
+        padding: 5px;
+        background-image: linear-gradient(to right, rgb(39, 14, 77), rgb(55, 29, 95), rgb(39, 14, 77));
+        color: rgb(24, 1, 37);
+        border: 2px #000000 solid;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        justify-content: space-evenly;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .chooseborder
+    {
+        height: 100%;
+        width: 0px;
+        margin: 0px;
+        padding: 5px;
+        background-color: #000000;
+    }
+
+/* the next are the objects that appear in many shapes and sizes */
+
+.writing2
+{
+    margin: 20px;
+    margin-left: 50px;
+    padding: 10px;
+    height: 485px;
+    width: 250px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: #270e4d;
+    position: relative;
+}
+
+.writing2 p
+{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: small;
+    color: #0d0815;
+}
+
+.writing3
+{
+    margin: 20px;
+    padding: 10px;
+    height: 210px;
+    width: 660px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgb(39, 14, 77);
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.writing4
+{
+    margin: 20px;
+    padding: 10px;
+    height: 200px;
+    width: 375px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgb(39, 14, 77);
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.writing5
+{
+    margin: 35px;
+    padding: 10px;
+    height: 200px;
+    width: 775px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgb(39, 14, 77);
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.writing6
+{
+    margin: 35px;
+    padding: 10px;
+    height: 255px;
+    width: 195px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgb(39, 14, 77);
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.writing7
+{
+    margin: 20px;
+    padding: 10px;
+    height: 155px;
+    width: 345px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgb(39, 14, 77);
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.writing3 img
+{
+    height: 200px;
+    width: 650px;
+    border: 2px #000000 solid;
+    border-radius: 10px;
+}
+
+.writing4 img
+{
+    height: 200px;
+    width: 375px;
+    border: 2px #000000 solid;
+    border-radius: 10px;
+}
+
+.writing5 img
+{
+    height: 190px;
+    width: 765px;
+    border: 2px #000000 solid;
+    border-radius: 10px;
+}
+
+.writing6 img
+{
+    height: 245px;
+    width: 185px;
+    border: 2px #000000 solid;
+    border-radius: 10px;
+}
+
+.writing7 img
+{
+    height: 145px;
+    width: 335px;
+    border: 2px #000000 solid;
+    border-radius: 10px;
+}
+
+/* ends */
+/* References */
+
+/* title page - the object you see before you hover on it */
+/* title page img - the image that comes with the title page */
+/* page - the decor object you see behind the title page */
+/* back page - the object thats really behind for decoration purposes*/
+
+.titlepage
+{
+    margin-left: 625px;
+    margin-right: 175px;
+    margin-top: 100px;
+    margin-bottom: auto;
+    padding: 10px;
+    background-color: rgb(81, 15, 122);
+    color: #220c35;
+    border: 2px solid black;
+    border-left: 10px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    height: 500px;
+    width: 450px;
+    position: absolute;
+    z-index: 2;
+}
+
+.titlepage img
+{
+    margin-top: 50px;
+    height: 400px;
+    width: 450px;
+    position: absolute;
+}
+
+.page
+{
+    
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(239, 236, 231);
+    border: 2px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: block;
+    height: 475px;
+    width: 450px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    opacity: 0%;
+}
+
+.backpage
+{
+    margin-left: 619px;
+    margin-right: 175px;
+    margin-top: 100px;
+    margin-bottom: auto;
+    padding: 10px;
+    background-color: rgb(81, 15, 122);
+    border: 2px solid black;
+    border-left: 10px solid black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: block;
+    height: 500px;
+    width: 450px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* cover - the cover of the full book */
+/* gallery - the full page of the book */
+/* spine - the spine of the full book */
+
+#cover
+{
+    margin-left: 175px;
+    margin-right: 175px;
+    margin-top: 100px;
+    margin-bottom: auto;
+    padding: 10px;
+    display: block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(81, 15, 122);   
+    position: absolute;
+    height: 500px;
+    width: 900px;
+    opacity: 0%;
+}
+
+#cover h1
+{
+    position: absolute;
+    z-index: 2;
+    margin: 10px 0px 0px 20px;
+}
+
+#cover h3
+{
+    position: absolute;
+    z-index: 2;
+    margin: 70px 0px 0px 40px;
+}
+
+#gallery
+{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(239, 236, 231);
+    position: absolute;
+    height: 475px;
+    width: 875px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#spine
+{
+    padding: 0px;
+    display: block;
+    border: 2px solid black;
+    background-color: black;
+    position: absolute;
+    height: 495px;
+    width: 20px;
+}
+
+/* animation - whats happening hear is that once you hover over the group, the title page will flip
+over to the other side, making it look like a book, the page would look like its appearing to make
+it more realistic with the img while also decreasing its opacity, disappearing tbc... */
+
+.placeholder:hover > .titlepage
+{
+
+    transform: translateX(-450px) rotateY(180deg);
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+
+.placeholder:hover > .titlepage > .page
+{
+
+    opacity: 100%;
+    transition-duration: 1s;
+}
+
+.placeholder:hover > .titlepage > .titlepage img
+{
+
+    opacity: 100%;
+    transition-duration: 1s;
+}
+
+/* animation - the cover then makes it way to top layer, increasing its opacity, to make it seem
+like a book has been opened */
+
+.placeholder:hover > #cover
+{
+    opacity: 100%;
+    transition: ease-in-out;
+    transition-duration: 1s;
+    z-index: 3;
+}
